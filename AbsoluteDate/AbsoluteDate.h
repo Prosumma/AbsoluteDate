@@ -2,11 +2,11 @@
 //  AbsoluteDate.h
 //  AbsoluteDate
 //
-//  Created by Gregory Higley on 4/27/18.
+//  Created by Gregory Higley on 4/28/18.
 //  Copyright © 2018 Gregory Higley. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for AbsoluteDate.
 FOUNDATION_EXPORT double AbsoluteDateVersionNumber;
