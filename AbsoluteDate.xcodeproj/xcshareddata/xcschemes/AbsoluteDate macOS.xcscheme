@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F3352A112094AC64000D0A9B"
-               BuildableName = "AbsoluteDate_macOS.framework"
+               BuildableName = "AbsoluteDate.framework"
                BlueprintName = "AbsoluteDate macOS"
                ReferencedContainer = "container:AbsoluteDate.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F3352A192094AC65000D0A9B"
-               BuildableName = "AbsoluteDateTests macOS.xctest"
+               BuildableName = "AbsoluteDateTests.xctest"
                BlueprintName = "AbsoluteDateTests macOS"
                ReferencedContainer = "container:AbsoluteDate.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F3352A112094AC64000D0A9B"
-            BuildableName = "AbsoluteDate_macOS.framework"
+            BuildableName = "AbsoluteDate.framework"
             BlueprintName = "AbsoluteDate macOS"
             ReferencedContainer = "container:AbsoluteDate.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F3352A112094AC64000D0A9B"
-            BuildableName = "AbsoluteDate_macOS.framework"
+            BuildableName = "AbsoluteDate.framework"
             BlueprintName = "AbsoluteDate macOS"
             ReferencedContainer = "container:AbsoluteDate.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F3352A112094AC64000D0A9B"
-            BuildableName = "AbsoluteDate_macOS.framework"
+            BuildableName = "AbsoluteDate.framework"
             BlueprintName = "AbsoluteDate macOS"
             ReferencedContainer = "container:AbsoluteDate.xcodeproj">
          </BuildableReference>
