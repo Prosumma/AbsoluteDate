@@ -16,6 +16,7 @@
 		F3352A4A2094ADA3000D0A9B /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
 		F3352A4B2094ADA6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
 		F3352A552094ADCC000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3352A532094ADCC000D0A9B /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3352A592094AE2A000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3A0BF962094181600D821E9 /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A0BF8C2094181600D821E9 /* AbsoluteDate.framework */; };
 		F3A0BF9B2094181600D821E9 /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
 		F3A0BF9D2094181600D821E9 /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -185,6 +186,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3352A592094AE2A000D0A9B /* AbsoluteDate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
