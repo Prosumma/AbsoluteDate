@@ -10,12 +10,29 @@
 		F3352A1B2094AC65000D0A9B /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3352A122094AC64000D0A9B /* AbsoluteDate.framework */; };
 		F3352A292094AC7B000D0A9B /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
 		F3352A2A2094AC82000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3352A2C2094ACF6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
-		F3352A2D2094ACF6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
 		F3352A3C2094AD57000D0A9B /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3352A332094AD57000D0A9B /* AbsoluteDate.framework */; };
 		F3352A4A2094ADA3000D0A9B /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
-		F3352A4B2094ADA6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
 		F3352A592094AE2A000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3352A5B2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */; };
+		F3352A5C2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */; };
+		F3352A5D2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */; };
+		F3352A5E2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */; };
+		F3352A602094AEF0000D0A9B /* AbsoluteDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */; };
+		F3352A612094AEF0000D0A9B /* AbsoluteDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */; };
+		F3352A622094AEF0000D0A9B /* AbsoluteDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */; };
+		F3352A632094AEF0000D0A9B /* AbsoluteDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */; };
+		F3352A652094AF6A000D0A9B /* AbsoluteTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */; };
+		F3352A662094AF6A000D0A9B /* AbsoluteTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */; };
+		F3352A672094AF6A000D0A9B /* AbsoluteTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */; };
+		F3352A682094AF6A000D0A9B /* AbsoluteTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */; };
+		F3352A6A2094AFC5000D0A9B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A692094AFC5000D0A9B /* Util.swift */; };
+		F3352A6B2094AFC5000D0A9B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A692094AFC5000D0A9B /* Util.swift */; };
+		F3352A6C2094AFC5000D0A9B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A692094AFC5000D0A9B /* Util.swift */; };
+		F3352A6D2094AFC5000D0A9B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A692094AFC5000D0A9B /* Util.swift */; };
+		F3352A6F2094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */; };
+		F3352A702094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */; };
+		F3352A712094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */; };
+		F3352A722094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */; };
 		F3A0BF962094181600D821E9 /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A0BF8C2094181600D821E9 /* AbsoluteDate.framework */; };
 		F3A0BF9B2094181600D821E9 /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
 		F3A0BF9D2094181600D821E9 /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,10 +65,14 @@
 /* Begin PBXFileReference section */
 		F3352A122094AC64000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3352A1A2094AC65000D0A9B /* AbsoluteDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3352A2B2094ACF6000D0A9B /* Something.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Something.swift; sourceTree = "<group>"; };
 		F3352A332094AD57000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3352A3B2094AD57000D0A9B /* AbsoluteDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3352A512094ADCC000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteDate.swift; sourceTree = "<group>"; };
+		F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteDay.swift; sourceTree = "<group>"; };
+		F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteTime.swift; sourceTree = "<group>"; };
+		F3352A692094AFC5000D0A9B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingUserInfoKey.swift; sourceTree = "<group>"; };
 		F3A0BF8C2094181600D821E9 /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsoluteDate.h; sourceTree = "<group>"; };
 		F3A0BF902094181600D821E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,7 +165,11 @@
 			children = (
 				F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */,
 				F3A0BF902094181600D821E9 /* Info.plist */,
-				F3352A2B2094ACF6000D0A9B /* Something.swift */,
+				F3352A5A2094AE7D000D0A9B /* AbsoluteDate.swift */,
+				F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */,
+				F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */,
+				F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */,
+				F3352A692094AFC5000D0A9B /* Util.swift */,
 			);
 			path = AbsoluteDate;
 			sourceTree = "<group>";
@@ -346,6 +371,7 @@
 					};
 					F3352A502094ADCC000D0A9B = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					F3A0BF8B2094181600D821E9 = {
 						CreatedOnToolsVersion = 9.3;
@@ -436,7 +462,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3352A2D2094ACF6000D0A9B /* Something.swift in Sources */,
+				F3352A5C2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */,
+				F3352A612094AEF0000D0A9B /* AbsoluteDay.swift in Sources */,
+				F3352A662094AF6A000D0A9B /* AbsoluteTime.swift in Sources */,
+				F3352A702094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */,
+				F3352A6B2094AFC5000D0A9B /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +482,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3352A4B2094ADA6000D0A9B /* Something.swift in Sources */,
+				F3352A5D2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */,
+				F3352A622094AEF0000D0A9B /* AbsoluteDay.swift in Sources */,
+				F3352A672094AF6A000D0A9B /* AbsoluteTime.swift in Sources */,
+				F3352A712094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */,
+				F3352A6C2094AFC5000D0A9B /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3352A5E2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */,
+				F3352A632094AEF0000D0A9B /* AbsoluteDay.swift in Sources */,
+				F3352A682094AF6A000D0A9B /* AbsoluteTime.swift in Sources */,
+				F3352A722094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */,
+				F3352A6D2094AFC5000D0A9B /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +514,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3352A2C2094ACF6000D0A9B /* Something.swift in Sources */,
+				F3352A5B2094AE7D000D0A9B /* AbsoluteDate.swift in Sources */,
+				F3352A602094AEF0000D0A9B /* AbsoluteDay.swift in Sources */,
+				F3352A652094AF6A000D0A9B /* AbsoluteTime.swift in Sources */,
+				F3352A6F2094AFE1000D0A9B /* CodingUserInfoKey.swift in Sources */,
+				F3352A6A2094AFC5000D0A9B /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -720,6 +764,7 @@
 				PRODUCT_NAME = AbsoluteDate;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
@@ -730,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
