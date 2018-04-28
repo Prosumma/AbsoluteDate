@@ -9,7 +9,7 @@
 import Foundation
 
 public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codable {
-    static let dateFormat = "\(AbsoluteDay.dateFormat) \(AbsoluteTime.dateFormat)"
+    public static let dateFormat = "\(AbsoluteDay.dateFormat) \(AbsoluteTime.dateFormat)"
     
     public let day: AbsoluteDay
     public let time: AbsoluteTime
@@ -64,6 +64,26 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
     
     public func addingTimeInterval(_ timeInterval: TimeInterval) -> AbsoluteDate {
         return AbsoluteDate(date: date.addingTimeInterval(timeInterval))
+    }
+    
+    public static func +(lhs: AbsoluteDate, rhs: TimeInterval) -> AbsoluteDate {
+        return lhs.addingTimeInterval(rhs)
+    }
+    
+    public static func +(lhs: TimeInterval, rhs: AbsoluteDate) -> AbsoluteDate {
+        return rhs.addingTimeInterval(lhs)
+    }
+    
+    public static func +=(lhs: inout AbsoluteDate, rhs: TimeInterval) {
+        lhs = lhs + rhs
+    }
+    
+    public static func -(lhs: AbsoluteDate, rhs: TimeInterval) -> AbsoluteDate {
+        return lhs.addingTimeInterval(-rhs)
+    }
+    
+    public static func -=(lhs: inout AbsoluteDate, rhs: TimeInterval) {
+        lhs = lhs - rhs
     }
     
     public static func ==(lhs: AbsoluteDate, rhs: AbsoluteDate) -> Bool {

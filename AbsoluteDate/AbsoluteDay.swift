@@ -13,7 +13,7 @@ import Foundation
  */
 public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codable {
     
-    static let dateFormat = "YYYY-MM-dd"
+    public static let dateFormat = "YYYY-MM-dd"
     
     public let description: String
     public let hashValue: Int
@@ -84,7 +84,15 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
         return rhs.addingTimeInterval(86400 * TimeInterval(lhs))
     }
     
+    public static func +=(lhs: inout AbsoluteDay, rhs: Int) {
+        lhs = lhs + rhs
+    }
+    
     public static func -(lhs: AbsoluteDay, rhs: Int) -> AbsoluteDay {
         return lhs.addingTimeInterval(-86400 * TimeInterval(rhs))
+    }
+    
+    public static func -=(lhs: inout AbsoluteDay, rhs: Int) {
+        lhs = lhs - rhs
     }
 }
