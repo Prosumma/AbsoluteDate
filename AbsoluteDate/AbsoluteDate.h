@@ -6,7 +6,7 @@
 //  Copyright © 2018 Gregory Higley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <WatchKit/WatchKit.h>
 
 //! Project version number for AbsoluteDate.
 FOUNDATION_EXPORT double AbsoluteDateVersionNumber;

@@ -12,6 +12,10 @@
 		F3352A2A2094AC82000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3352A2C2094ACF6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
 		F3352A2D2094ACF6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
+		F3352A3C2094AD57000D0A9B /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3352A332094AD57000D0A9B /* AbsoluteDate.framework */; };
+		F3352A4A2094ADA3000D0A9B /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
+		F3352A4B2094ADA6000D0A9B /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3352A2B2094ACF6000D0A9B /* Something.swift */; };
+		F3352A552094ADCC000D0A9B /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3352A532094ADCC000D0A9B /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3A0BF962094181600D821E9 /* AbsoluteDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A0BF8C2094181600D821E9 /* AbsoluteDate.framework */; };
 		F3A0BF9B2094181600D821E9 /* AbsoluteDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */; };
 		F3A0BF9D2094181600D821E9 /* AbsoluteDate.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +27,13 @@
 			containerPortal = F3A0BF832094181600D821E9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F3352A112094AC64000D0A9B;
+			remoteInfo = AbsoluteDate;
+		};
+		F3352A3D2094AD57000D0A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A0BF832094181600D821E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3352A322094AD57000D0A9B;
 			remoteInfo = AbsoluteDate;
 		};
 		F3A0BF972094181600D821E9 /* PBXContainerItemProxy */ = {
@@ -38,6 +49,11 @@
 		F3352A122094AC64000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3352A1A2094AC65000D0A9B /* AbsoluteDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3352A2B2094ACF6000D0A9B /* Something.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Something.swift; sourceTree = "<group>"; };
+		F3352A332094AD57000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3352A3B2094AD57000D0A9B /* AbsoluteDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3352A512094ADCC000D0A9B /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3352A532094ADCC000D0A9B /* AbsoluteDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsoluteDate.h; sourceTree = "<group>"; };
+		F3352A542094ADCC000D0A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A0BF8C2094181600D821E9 /* AbsoluteDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A0BF8F2094181600D821E9 /* AbsoluteDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsoluteDate.h; sourceTree = "<group>"; };
 		F3A0BF902094181600D821E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +78,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3352A2F2094AD57000D0A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A382094AD57000D0A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3352A3C2094AD57000D0A9B /* AbsoluteDate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A4D2094ADCC000D0A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A0BF882094181600D821E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,11 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3352A522094ADCC000D0A9B /* AbsoluteDate */ = {
+			isa = PBXGroup;
+			children = (
+				F3352A532094ADCC000D0A9B /* AbsoluteDate.h */,
+				F3352A542094ADCC000D0A9B /* Info.plist */,
+			);
+			path = AbsoluteDate;
+			sourceTree = "<group>";
+		};
 		F3A0BF822094181600D821E9 = {
 			isa = PBXGroup;
 			children = (
 				F3A0BF8E2094181600D821E9 /* AbsoluteDate */,
 				F3A0BF992094181600D821E9 /* AbsoluteDateTests */,
+				F3352A522094ADCC000D0A9B /* AbsoluteDate */,
 				F3A0BF8D2094181600D821E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +144,9 @@
 				F3A0BF952094181600D821E9 /* AbsoluteDateTests.xctest */,
 				F3352A122094AC64000D0A9B /* AbsoluteDate.framework */,
 				F3352A1A2094AC65000D0A9B /* AbsoluteDateTests.xctest */,
+				F3352A332094AD57000D0A9B /* AbsoluteDate.framework */,
+				F3352A3B2094AD57000D0A9B /* AbsoluteDateTests.xctest */,
+				F3352A512094ADCC000D0A9B /* AbsoluteDate.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +178,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3352A2A2094AC82000D0A9B /* AbsoluteDate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A302094AD57000D0A9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A4E2094ADCC000D0A9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3352A552094ADCC000D0A9B /* AbsoluteDate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +242,60 @@
 			productName = AbsoluteDateTests;
 			productReference = F3352A1A2094AC65000D0A9B /* AbsoluteDateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3352A322094AD57000D0A9B /* AbsoluteDate tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3352A442094AD57000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDate tvOS" */;
+			buildPhases = (
+				F3352A2E2094AD57000D0A9B /* Sources */,
+				F3352A2F2094AD57000D0A9B /* Frameworks */,
+				F3352A302094AD57000D0A9B /* Headers */,
+				F3352A312094AD57000D0A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AbsoluteDate tvOS";
+			productName = AbsoluteDate;
+			productReference = F3352A332094AD57000D0A9B /* AbsoluteDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3352A3A2094AD57000D0A9B /* AbsoluteDateTests tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3352A472094AD57000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDateTests tvOS" */;
+			buildPhases = (
+				F3352A372094AD57000D0A9B /* Sources */,
+				F3352A382094AD57000D0A9B /* Frameworks */,
+				F3352A392094AD57000D0A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3352A3E2094AD57000D0A9B /* PBXTargetDependency */,
+			);
+			name = "AbsoluteDateTests tvOS";
+			productName = AbsoluteDateTests;
+			productReference = F3352A3B2094AD57000D0A9B /* AbsoluteDateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3352A502094ADCC000D0A9B /* AbsoluteDate watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3352A562094ADCC000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDate watchOS" */;
+			buildPhases = (
+				F3352A4C2094ADCC000D0A9B /* Sources */,
+				F3352A4D2094ADCC000D0A9B /* Frameworks */,
+				F3352A4E2094ADCC000D0A9B /* Headers */,
+				F3352A4F2094ADCC000D0A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AbsoluteDate watchOS";
+			productName = AbsoluteDate;
+			productReference = F3352A512094ADCC000D0A9B /* AbsoluteDate.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		F3A0BF8B2094181600D821E9 /* AbsoluteDate iOS */ = {
 			isa = PBXNativeTarget;
@@ -230,6 +350,15 @@
 					F3352A192094AC65000D0A9B = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					F3352A322094AD57000D0A9B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F3352A3A2094AD57000D0A9B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F3352A502094ADCC000D0A9B = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					F3A0BF8B2094181600D821E9 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
@@ -255,6 +384,9 @@
 				F3A0BF942094181600D821E9 /* AbsoluteDateTests iOS */,
 				F3352A112094AC64000D0A9B /* AbsoluteDate macOS */,
 				F3352A192094AC65000D0A9B /* AbsoluteDateTests macOS */,
+				F3352A322094AD57000D0A9B /* AbsoluteDate tvOS */,
+				F3352A3A2094AD57000D0A9B /* AbsoluteDateTests tvOS */,
+				F3352A502094ADCC000D0A9B /* AbsoluteDate watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +400,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3352A182094AC65000D0A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A312094AD57000D0A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A392094AD57000D0A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A4F2094ADCC000D0A9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,6 +460,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3352A2E2094AD57000D0A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3352A4B2094ADA6000D0A9B /* Something.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A372094AD57000D0A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3352A4A2094ADA3000D0A9B /* AbsoluteDateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3352A4C2094ADCC000D0A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A0BF872094181600D821E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +506,11 @@
 			isa = PBXTargetDependency;
 			target = F3352A112094AC64000D0A9B /* AbsoluteDate macOS */;
 			targetProxy = F3352A1C2094AC65000D0A9B /* PBXContainerItemProxy */;
+		};
+		F3352A3E2094AD57000D0A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3352A322094AD57000D0A9B /* AbsoluteDate tvOS */;
+			targetProxy = F3352A3D2094AD57000D0A9B /* PBXContainerItemProxy */;
 		};
 		F3A0BF982094181600D821E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -435,6 +616,152 @@
 				PRODUCT_NAME = AbsoluteDateTests;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F3352A452094AD57000D0A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsoluteDate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDate;
+				PRODUCT_NAME = AbsoluteDate;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		F3352A462094AD57000D0A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsoluteDate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDate;
+				PRODUCT_NAME = AbsoluteDate;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
+		F3352A482094AD57000D0A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbsoluteDateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDateTests;
+				PRODUCT_NAME = AbsoluteDateTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		F3352A492094AD57000D0A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbsoluteDateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDateTests;
+				PRODUCT_NAME = AbsoluteDateTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
+		F3352A572094ADCC000D0A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsoluteDate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDate;
+				PRODUCT_NAME = AbsoluteDate;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		F3352A582094ADCC000D0A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsoluteDate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.AbsoluteDate;
+				PRODUCT_NAME = AbsoluteDate;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -662,6 +989,33 @@
 			buildConfigurations = (
 				F3352A272094AC65000D0A9B /* Debug */,
 				F3352A282094AC65000D0A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3352A442094AD57000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDate tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3352A452094AD57000D0A9B /* Debug */,
+				F3352A462094AD57000D0A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3352A472094AD57000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDateTests tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3352A482094AD57000D0A9B /* Debug */,
+				F3352A492094AD57000D0A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3352A562094ADCC000D0A9B /* Build configuration list for PBXNativeTarget "AbsoluteDate watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3352A572094ADCC000D0A9B /* Debug */,
+				F3352A582094ADCC000D0A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
