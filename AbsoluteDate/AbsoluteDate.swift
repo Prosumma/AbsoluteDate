@@ -63,7 +63,7 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
     }
     
     public func addingTimeInterval(_ timeInterval: TimeInterval) -> AbsoluteDate {
-        return AbsoluteDate(date: date.addingTimeInterval(timeInterval))
+        return AbsoluteDate(date: date(in: TimeZone(identifier: "UTC")!).addingTimeInterval(timeInterval))
     }
     
     public static func +(lhs: AbsoluteDate, rhs: TimeInterval) -> AbsoluteDate {
