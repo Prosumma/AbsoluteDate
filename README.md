@@ -20,4 +20,11 @@ You could. But the types contained in this framework offer some conveniences ove
 
 #### Serialization
 
-All of the types contained herein serialize using Apple's `Codable`. While they always encode to a `String`, they can decode from a `Date` or `String`.
+All of the types contained herein serialize using Apple's `Codable`. While they always encode to a `String`, they can decode from a `Date` or `String`. How a `Date` decodes is dependent upon the `dateDecodingStrategy` property of the `Decoder`. Once the `Date` is decoded, the `AbsoluteDate` is derived by formatting it in the current time zone. To use a different time zone, set the `CodingUserInfoKey.absoluteDateTimeZone` key of the decoder's `userInfo` property to your preferred time zone, e.g.,
+
+```swift
+let decoder = JSONDecoder()
+decoder.userInfo[.absoluteDateTimeZone] = TimeZone(identifier: "UTC")!
+let absoluteDate = try decoder.decode(AbsoluteDate.self, from: jsonData)
+```
+
