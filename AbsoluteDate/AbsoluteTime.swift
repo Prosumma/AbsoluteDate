@@ -57,11 +57,11 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
     }
     
     public var date: Date {
-        return date(in: .current)
+        return date()
     }
     
-    public func addingTimeInterval(_ timeInterval: TimeInterval) -> AbsoluteTime {
-        return AbsoluteTime(date: date(in: TimeZone(identifier: "UTC")!).addingTimeInterval(timeInterval))
+    public func addingTimeInterval(_ timeInterval: TimeInterval, in timeZone: TimeZone = .absoluteDateUTC) -> AbsoluteTime {
+        return AbsoluteTime(date: date(in: timeZone).addingTimeInterval(timeInterval))
     }
     
     public static func +(lhs: AbsoluteTime, rhs: TimeInterval) -> AbsoluteTime {
@@ -85,10 +85,10 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
     }
     
     public static func ==(lhs: AbsoluteTime, rhs: AbsoluteTime) -> Bool {
-        return String(describing: lhs) == String(describing: rhs)
+        return lhs.date(in: .absoluteDateUTC) == rhs.date(in: .absoluteDateUTC)
     }
     
     public static func <(lhs: AbsoluteTime, rhs: AbsoluteTime) -> Bool {
-        return String(describing: lhs) < String(describing: rhs)
+        return lhs.date(in: .absoluteDateUTC) < rhs.date(in: .absoluteDateUTC)
     }
 }

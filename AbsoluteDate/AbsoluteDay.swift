@@ -61,11 +61,11 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
     }
     
     public var date: Date {
-        return date(in: .current)
+        return date()
     }
     
-    public func addingTimeInterval(_ timeInterval: TimeInterval) -> AbsoluteDay {
-        return AbsoluteDay(date: date(in: TimeZone(identifier: "UTC")!).addingTimeInterval(timeInterval))
+    public func addingTimeInterval(_ timeInterval: TimeInterval, in timeZone: TimeZone = .absoluteDateUTC) -> AbsoluteDay {
+        return AbsoluteDay(date: date(in: timeZone).addingTimeInterval(timeInterval))
     }
     
     public static func ==(lhs: AbsoluteDay, rhs: AbsoluteDay) -> Bool {

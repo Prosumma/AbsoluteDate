@@ -23,15 +23,8 @@ class AbsoluteDateTests: XCTestCase {
     
     func testExample() {
         let decoder = JSONDecoder()
-        decoder.userInfo[.absoluteDateTimeZone] = TimeZone(identifier: "UTC")
-
+        decoder.userInfo[.absoluteDateTimeZone] = TimeZone(identifier: "UTC")!
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
