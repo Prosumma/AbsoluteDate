@@ -54,6 +54,16 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
         self.init(day: AbsoluteDay(date: date, in: timeZone), time: AbsoluteTime(date: date, in: timeZone))
     }
     
+    public init?(_ representation: String, in timeZone: TimeZone = .current) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = AbsoluteDate.dateFormat
+        dateFormatter.timeZone = timeZone
+        guard let date = dateFormatter.date(from: representation) else {
+            return nil
+        }
+        self.init(date: date, in: timeZone)
+    }
+    
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         let timeZone = (decoder.userInfo[.absoluteDateTimeZone] as! TimeZone?) ?? .current

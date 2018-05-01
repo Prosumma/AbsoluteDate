@@ -14,7 +14,7 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
     public let description: String
     public let hashValue: Int
     
-    private init(_ description: String) {
+    private init(description: String) {
         self.description = description
         self.hashValue = hash(String(reflecting: type(of: self)), description)
     }
@@ -23,7 +23,17 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
         let formatter = DateFormatter()
         formatter.dateFormat = AbsoluteTime.dateFormat
         formatter.timeZone = timeZone
-        self.init(formatter.string(from: date))
+        self.init(description: formatter.string(from: date))
+    }
+    
+    public init?(_ representation: String, in timeZone: TimeZone = .current) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = AbsoluteTime.dateFormat
+        formatter.timeZone = timeZone
+        guard let date = formatter.date(from: representation) else {
+            return nil
+        }
+        self.init(date: date, in: timeZone)
     }
     
     public init(from decoder: Decoder) throws {
@@ -40,7 +50,7 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
             if formatter.date(from: raw) == nil {
                 throw DecodingError.dataCorruptedError(in: container, debugDescription: "'\(raw)' is not a valid AbsoluteTime representation.")
             }
-            self.init(raw)
+            self.init(description: raw)
         }
     }
     

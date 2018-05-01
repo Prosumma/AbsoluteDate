@@ -18,7 +18,7 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
     public let description: String
     public let hashValue: Int
     
-    private init(_ description: String) {
+    private init(description: String) {
         self.description = description
         self.hashValue = hash(String(reflecting: type(of: self)), description)
     }
@@ -27,7 +27,7 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
         let formatter = DateFormatter()
         formatter.dateFormat = AbsoluteDay.dateFormat
         formatter.timeZone = timeZone
-        self.init(formatter.string(from: date))
+        self.init(description: formatter.string(from: date))
     }
     
     public init(from decoder: Decoder) throws {
@@ -44,8 +44,18 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
             if formatter.date(from: raw) == nil {
                 throw DecodingError.dataCorruptedError(in: container, debugDescription: "'\(raw)' is not a valid AbsoluteDay representation.")
             }
-            self.init(raw)
+            self.init(description: raw)
         }
+    }
+    
+    public init?(_ representation: String, in timeZone: TimeZone = .current) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = AbsoluteDay.dateFormat
+        formatter.timeZone = timeZone
+        guard let date = formatter.date(from: representation) else {
+            return nil
+        }
+        self.init(date: date, in: timeZone)
     }
     
     public func encode(to encoder: Encoder) throws {
