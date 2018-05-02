@@ -78,6 +78,20 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
         return AbsoluteDay(date: date(in: timeZone).addingTimeInterval(timeInterval))
     }
     
+    public mutating func addTimeInterval(_ timeInterval: TimeInterval, in timeZone: TimeZone = .absoluteDateUTC) {
+        self = AbsoluteDay(date: date(in: timeZone).addingTimeInterval(timeInterval))
+    }
+    
+    public func addingCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) -> AbsoluteDay {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        return AbsoluteDay(date: calendar.date(byAdding: component, value: value, to: date(in: timeZone))!, in: timeZone)
+    }
+    
+    public mutating func addCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) {
+        self = addingCalendarComponent(component, value: value, in: timeZone)
+    }
+    
     public static func ==(lhs: AbsoluteDay, rhs: AbsoluteDay) -> Bool {
         return String(describing: lhs) == String(describing: rhs)
     }
@@ -87,11 +101,11 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
     }
     
     public static func +(lhs: AbsoluteDay, rhs: Int) -> AbsoluteDay {
-        return lhs.addingTimeInterval(86400 * TimeInterval(rhs))
+        return lhs.addingCalendarComponent(.day, value: rhs)
     }
     
     public static func +(lhs: Int, rhs: AbsoluteDay) -> AbsoluteDay {
-        return rhs.addingTimeInterval(86400 * TimeInterval(lhs))
+        return rhs.addingCalendarComponent(.day, value: lhs)
     }
     
     public static func +=(lhs: inout AbsoluteDay, rhs: Int) {
@@ -99,7 +113,7 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
     }
     
     public static func -(lhs: AbsoluteDay, rhs: Int) -> AbsoluteDay {
-        return lhs.addingTimeInterval(-86400 * TimeInterval(rhs))
+        return lhs.addingCalendarComponent(.day, value: -rhs)
     }
     
     public static func -=(lhs: inout AbsoluteDay, rhs: Int) {

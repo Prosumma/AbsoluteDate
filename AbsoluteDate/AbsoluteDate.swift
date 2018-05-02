@@ -123,6 +123,16 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
         return AbsoluteDate(date: date(in: timeZone).addingTimeInterval(timeInterval))
     }
     
+    public func addingCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) -> AbsoluteDate {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        return AbsoluteDate(date: calendar.date(byAdding: component, value: value, to: date(in: timeZone))!, in: timeZone)
+    }
+    
+    public mutating func addCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) {
+        self = addingCalendarComponent(component, value: value, in: timeZone)
+    }
+    
     /// Create a new `AbsoluteDate` by adding seconds.
     public static func +(lhs: AbsoluteDate, rhs: TimeInterval) -> AbsoluteDate {
         return lhs.addingTimeInterval(rhs)

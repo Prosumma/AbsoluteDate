@@ -74,6 +74,20 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
         return AbsoluteTime(date: date(in: timeZone).addingTimeInterval(timeInterval))
     }
     
+    public mutating func addTimeInterval(_ timeInterval: TimeInterval, in timeZone: TimeZone = .absoluteDateUTC) {
+        self = addingTimeInterval(timeInterval, in: timeZone)
+    }
+    
+    public func addingCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) -> AbsoluteTime {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+        return AbsoluteTime(date: calendar.date(byAdding: component, value: value, to: date(in: timeZone))!, in: timeZone)
+    }
+    
+    public mutating func addCalendarComponent(_ component: Calendar.Component, value: Int, in timeZone: TimeZone = .absoluteDateUTC) {
+        self = addingCalendarComponent(component, value: value, in: timeZone)
+    }
+    
     public static func +(lhs: AbsoluteTime, rhs: TimeInterval) -> AbsoluteTime {
         return lhs.addingTimeInterval(rhs)
     }
