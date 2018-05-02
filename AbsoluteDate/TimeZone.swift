@@ -9,7 +9,6 @@
 import Foundation
 
 extension TimeZone {
-    
+    /// The UTC time zone
     public static let absoluteDateUTC = TimeZone(identifier: "UTC")!
-    
 }

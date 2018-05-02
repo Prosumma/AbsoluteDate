@@ -174,8 +174,8 @@
 				F3352A5F2094AEF0000D0A9B /* AbsoluteDay.swift */,
 				F3352A642094AF6A000D0A9B /* AbsoluteTime.swift */,
 				F3352A6E2094AFE1000D0A9B /* CodingUserInfoKey.swift */,
-				F3352A692094AFC5000D0A9B /* Util.swift */,
 				F3A7293C209821B2006CD6CC /* TimeZone.swift */,
+				F3352A692094AFC5000D0A9B /* Util.swift */,
 			);
 			path = AbsoluteDate;
 			sourceTree = "<group>";
