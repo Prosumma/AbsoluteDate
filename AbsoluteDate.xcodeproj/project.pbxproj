@@ -40,6 +40,10 @@
 		F3A7293E209821B2006CD6CC /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7293C209821B2006CD6CC /* TimeZone.swift */; };
 		F3A7293F209821B2006CD6CC /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7293C209821B2006CD6CC /* TimeZone.swift */; };
 		F3A72940209821B2006CD6CC /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7293C209821B2006CD6CC /* TimeZone.swift */; };
+		F3A9D50C209AD29900CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D50B209AD29900CE54A2 /* DateMath.framework */; };
+		F3A9D50D209AD2AC00CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D509209AD28700CE54A2 /* DateMath.framework */; };
+		F3A9D50F209AD2BB00CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D50E209AD2BB00CE54A2 /* DateMath.framework */; };
+		F3A9D511209AD2D200CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D510209AD2D200CE54A2 /* DateMath.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteDateTests.swift; sourceTree = "<group>"; };
 		F3A0BF9C2094181600D821E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A7293C209821B2006CD6CC /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
+		F3A9D509209AD28700CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/Mac/DateMath.framework; sourceTree = "<group>"; };
+		F3A9D50B209AD29900CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/iOS/DateMath.framework; sourceTree = "<group>"; };
+		F3A9D50E209AD2BB00CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/tvOS/DateMath.framework; sourceTree = "<group>"; };
+		F3A9D510209AD2D200CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/watchOS/DateMath.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A9D50D209AD2AC00CE54A2 /* DateMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A9D50F209AD2BB00CE54A2 /* DateMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A9D511209AD2D200CE54A2 /* DateMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A9D50C209AD29900CE54A2 /* DateMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +160,7 @@
 				F3A0BF8E2094181600D821E9 /* AbsoluteDate */,
 				F3A0BF992094181600D821E9 /* AbsoluteDateTests */,
 				F3A0BF8D2094181600D821E9 /* Products */,
+				F3A9D508209AD28700CE54A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +200,17 @@
 				F3A0BF9C2094181600D821E9 /* Info.plist */,
 			);
 			path = AbsoluteDateTests;
+			sourceTree = "<group>";
+		};
+		F3A9D508209AD28700CE54A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3A9D510209AD2D200CE54A2 /* DateMath.framework */,
+				F3A9D50E209AD2BB00CE54A2 /* DateMath.framework */,
+				F3A9D50B209AD29900CE54A2 /* DateMath.framework */,
+				F3A9D509209AD28700CE54A2 /* DateMath.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,6 +596,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -601,6 +629,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -669,6 +701,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -695,6 +731,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -763,6 +803,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -792,6 +836,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -939,6 +987,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -966,6 +1019,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AbsoluteDate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Gregory Higley. All rights reserved.
 //
 
+import DateMath
 import Foundation
 
 /**
@@ -108,7 +109,19 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
         return rhs.addingCalendarComponent(.day, value: lhs)
     }
     
+    public static func +(lhs: AbsoluteDay, rhs: DateMath.Expression) -> AbsoluteDay {
+        return AbsoluteDay(date: lhs.date(in: .absoluteDateUTC) + .absoluteDateUTC ⁝ rhs, in: .absoluteDateUTC)
+    }
+    
+    public static func +(lhs: DateMath.Expression, rhs: AbsoluteDay) -> AbsoluteDay {
+        return rhs + lhs
+    }
+    
     public static func +=(lhs: inout AbsoluteDay, rhs: Int) {
+        lhs = lhs + rhs
+    }
+    
+    public static func+=(lhs: inout AbsoluteDay, rhs: DateMath.Expression) {
         lhs = lhs + rhs
     }
     
@@ -116,7 +129,15 @@ public struct AbsoluteDay: CustomStringConvertible, Comparable, Hashable, Codabl
         return lhs.addingCalendarComponent(.day, value: -rhs)
     }
     
+    public static func -(lhs: AbsoluteDay, rhs: DateMath.Expression) -> AbsoluteDay {
+        return lhs + -rhs
+    }
+    
     public static func -=(lhs: inout AbsoluteDay, rhs: Int) {
+        lhs = lhs - rhs
+    }
+    
+    public static func -=(lhs: inout AbsoluteDay, rhs: DateMath.Expression) {
         lhs = lhs - rhs
     }
 }

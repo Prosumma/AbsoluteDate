@@ -6,6 +6,7 @@
 //  Copyright © 2018 Gregory Higley. All rights reserved.
 //
 
+import DateMath
 import Foundation
 
 /**
@@ -143,7 +144,19 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
         return rhs.addingTimeInterval(lhs)
     }
     
+    public static func +(lhs: AbsoluteDate, rhs: DateMath.Expression) -> AbsoluteDate {
+        return AbsoluteDate(date: lhs.date(in: .absoluteDateUTC) + .absoluteDateUTC ⁝ rhs, in: .absoluteDateUTC)
+    }
+    
+    public static func +(lhs: DateMath.Expression, rhs: AbsoluteDate) -> AbsoluteDate {
+        return rhs + lhs
+    }
+    
     public static func +=(lhs: inout AbsoluteDate, rhs: TimeInterval) {
+        lhs = lhs + rhs
+    }
+    
+    public static func +=(lhs: inout AbsoluteDate, rhs: DateMath.Expression) {
         lhs = lhs + rhs
     }
     
@@ -151,7 +164,15 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
         return lhs.addingTimeInterval(-rhs)
     }
     
+    public static func -(lhs: AbsoluteDate, rhs: DateMath.Expression) -> AbsoluteDate {
+        return lhs + -rhs
+    }
+    
     public static func -=(lhs: inout AbsoluteDate, rhs: TimeInterval) {
+        lhs = lhs - rhs
+    }
+    
+    public static func -=(lhs: inout AbsoluteDate, rhs: DateMath.Expression) {
         lhs = lhs - rhs
     }
     
