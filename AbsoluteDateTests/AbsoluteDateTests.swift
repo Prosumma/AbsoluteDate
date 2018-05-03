@@ -7,23 +7,14 @@
 //
 
 import XCTest
+import DateMath
 @testable import AbsoluteDate
 
 class AbsoluteDateTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testExample() {
-        let decoder = JSONDecoder()
-        decoder.userInfo[.absoluteDateTimeZone] = TimeZone(identifier: "UTC")!
+        let day = AbsoluteDay()
+        XCTAssertEqual(day + 4, day + 4 * .day)
     }
     
     
