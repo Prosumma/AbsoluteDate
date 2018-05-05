@@ -27,6 +27,8 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
     /// The date format used to produce the internal representation of this `AbsoluteDate`.
     public static let dateFormat = "\(AbsoluteDay.dateFormat) \(AbsoluteTime.dateFormat)"
     
+    public static let alternateDateFormats = AbsoluteTime.alternateDateFormats.map{ "\(AbsoluteDay.dateFormat) \($0)" }
+    
     /// The `AbsoluteDay` portion of this `AbsoluteDate`.
     public let day: AbsoluteDay
     /// The `AbsoluteTime` portion of this `AbsoluteDate`.
@@ -56,10 +58,11 @@ public struct AbsoluteDate: CustomStringConvertible, Comparable, Hashable, Codab
     }
     
     public init?(_ representation: String, in timeZone: TimeZone = .current) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = AbsoluteDate.dateFormat
-        dateFormatter.timeZone = timeZone
-        guard let date = dateFormatter.date(from: representation) else {
+        let formatter = DateFormatter()
+        formatter.timeZone = timeZone
+        
+        formatter.dateFormat = AbsoluteDate.dateFormat
+        guard let date = formatter.date(from: representation) else {
             return nil
         }
         self.init(date: date, in: timeZone)

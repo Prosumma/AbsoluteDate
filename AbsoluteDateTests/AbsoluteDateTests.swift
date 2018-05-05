@@ -12,10 +12,24 @@ import DateMath
 
 class AbsoluteDateTests: XCTestCase {
     
-    func testExample() {
-        let day = AbsoluteDay()
-        XCTAssertEqual(day + 4, day + 4 * .day)
+    func testInitializationOfAbsoluteDateFromDate() {
+        let timeZone = TimeZone(identifier: "GMT")!
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd HH:mm:ss.SSS"
+        formatter.timeZone = timeZone
+        let representation = "2013-05-22 13:10:05.334"
+        guard let date = formatter.date(from: representation) else {
+            XCTFail("'\(representation)' is not a valid date.")
+            return
+        }
+        let absoluteDate = AbsoluteDate(date: date, in: timeZone)
+        XCTAssertEqual(String(describing: absoluteDate), representation)
     }
     
+    func testInitializationOfAbsoluteDateFromRepresentation() {
+        let representation = "2013-05-22 13:10:05.334"
+        XCTAssertNotNil(AbsoluteDate(representation))
+        XCTAssertEqual(String(describing: AbsoluteDate(representation)!), representation)
+    }
     
 }

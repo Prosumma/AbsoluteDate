@@ -44,6 +44,9 @@
 		F3A9D50F209AD2BB00CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D50E209AD2BB00CE54A2 /* DateMath.framework */; };
 		F3A9D511209AD2D200CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D510209AD2D200CE54A2 /* DateMath.framework */; };
 		F3A9D513209AD84A00CE54A2 /* DateMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A9D50B209AD29900CE54A2 /* DateMath.framework */; };
+		F3B95C7B209B720400925A96 /* AbsoluteDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B95C7A209B720400925A96 /* AbsoluteDayTests.swift */; };
+		F3B95C7C209B720400925A96 /* AbsoluteDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B95C7A209B720400925A96 /* AbsoluteDayTests.swift */; };
+		F3B95C7D209B720400925A96 /* AbsoluteDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B95C7A209B720400925A96 /* AbsoluteDayTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,7 @@
 		F3A9D50B209AD29900CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/iOS/DateMath.framework; sourceTree = "<group>"; };
 		F3A9D50E209AD2BB00CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/tvOS/DateMath.framework; sourceTree = "<group>"; };
 		F3A9D510209AD2D200CE54A2 /* DateMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateMath.framework; path = Carthage/Build/watchOS/DateMath.framework; sourceTree = "<group>"; };
+		F3B95C7A209B720400925A96 /* AbsoluteDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsoluteDayTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +200,9 @@
 		F3A0BF992094181600D821E9 /* AbsoluteDateTests */ = {
 			isa = PBXGroup;
 			children = (
-				F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */,
 				F3A0BF9C2094181600D821E9 /* Info.plist */,
+				F3A0BF9A2094181600D821E9 /* AbsoluteDateTests.swift */,
+				F3B95C7A209B720400925A96 /* AbsoluteDayTests.swift */,
 			);
 			path = AbsoluteDateTests;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3352A292094AC7B000D0A9B /* AbsoluteDateTests.swift in Sources */,
+				F3B95C7C209B720400925A96 /* AbsoluteDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3352A4A2094ADA3000D0A9B /* AbsoluteDateTests.swift in Sources */,
+				F3B95C7D209B720400925A96 /* AbsoluteDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A0BF9B2094181600D821E9 /* AbsoluteDateTests.swift in Sources */,
+				F3B95C7B209B720400925A96 /* AbsoluteDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

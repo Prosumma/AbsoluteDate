@@ -12,6 +12,9 @@ import Foundation
 public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codable {
     public static let dateFormat = "HH:mm:ss.SSS"
     
+    /// Alternate date formats for the `init(_ representation:)` initializer.
+    public static let alternateDateFormats = ["HH:mm:ss", "HH:mm"]
+    
     public let description: String
     public let hashValue: Int
     
@@ -28,13 +31,17 @@ public struct AbsoluteTime: CustomStringConvertible, Comparable, Hashable, Codab
     }
     
     public init?(_ representation: String, in timeZone: TimeZone = .current) {
+        let dateFormats = [AbsoluteTime.dateFormat] + AbsoluteTime.alternateDateFormats
         let formatter = DateFormatter()
-        formatter.dateFormat = AbsoluteTime.dateFormat
         formatter.timeZone = timeZone
-        guard let date = formatter.date(from: representation) else {
-            return nil
+        for dateFormat in dateFormats {
+            formatter.dateFormat = dateFormat
+            if let date = formatter.date(from: representation) {
+                self.init(date: date, in: timeZone)
+                return
+            }
         }
-        self.init(date: date, in: timeZone)
+        return nil
     }
     
     public init(from decoder: Decoder) throws {
